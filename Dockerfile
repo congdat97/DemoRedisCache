@@ -5,4 +5,4 @@ EXPOSE 5000
 # Copy artifact từ pipeline publish
 COPY . .
 
-ENTRYPOINT ["dotnet", "demo-redis-cache.dll"]
+ENTRYPOINT ["dotnet", "app/demo-redis-cache.dll"]
