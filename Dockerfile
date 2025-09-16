@@ -1,0 +1,8 @@
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+WORKDIR /app
+EXPOSE 5000
+
+# Copy artifact từ pipeline publish
+COPY . .
+
+ENTRYPOINT ["dotnet", "demo-redis-cache.dll"]
